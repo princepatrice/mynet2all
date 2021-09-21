@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ServiceController extends AbstractController
 {
+    private $tab=["1"=>"https://panel.magmaerp.online/public"];
     /**
      * @Route("/", name="service")
      */
@@ -26,11 +27,27 @@ class ServiceController extends AbstractController
          }
         $session = $request->getSession();
         $user=$session->get("currentuser");
+        //dd($user);
         return $this->render('service/index.html.twig', [
             'controller_name' => 'ServiceController',
             'user'=>$user,
         ]);
     }
+
+
+        /**
+     * @Route("/view/{id}/account/{idaccount}", name="service-view")
+     */
+    public function view(Request $request,$id,$idaccount): Response
+    {
+        $checkstatus=$this->check_authentificated($request);
+        if(!$checkstatus["status"]){
+            return $this->redirectToRoute('login');
+         }
+         $url = $this->tab[$id];
+         return $this->redirect("$url/saas/$idaccount/authentication");
+    }
+
     public function check_authentificated(Request $request){
         //return $this->api_key;
         $session = $request->getSession();

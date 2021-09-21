@@ -7,7 +7,13 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>Service</h2>
+                <h2>
+                <ol class="breadcrumb breadcrumb-col-pink">
+                                <li><a href="javascript:void(0);">
+                                <span style="font-size:150%"><i class="material-icons">library_books</i> Service</span>
+                                </a></li>
+                            </ol>
+                </h2>
             </div>
             <div class="block-body row">
               <div class="col-12">
@@ -53,7 +59,7 @@
                             </ul>
                         </div>
                         <div class="body">
-                           <img src="https://net2all-business.online/assets_site/img/solutions/magmaerp.png" width="100%" height="50px" />
+                          <a href="{{path('service-view',{'id':1,'idaccount':user.id_utilisateur})}}" target="_blank"> <img src="https://net2all-business.online/assets_site/img/solutions/magmaerp.png" width="100%" height="50px" /></a>
                         </div>
                     </div>
                 </div>

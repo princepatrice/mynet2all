@@ -61,7 +61,7 @@ class AuthController extends AbstractController
     }
     else
     {
-        return $this->redirectToRoute('login');
+        return $this->redirectToRoute('login',['error'=>1]);
     }
 }
 /**
@@ -83,7 +83,7 @@ class AuthController extends AbstractController
     }
 
  /**
-     * @Route("/dashboard", name="dashboard" )
+     * @Route("/dashboard/", name="dashboard" )
      */
     public function dashboard(Request $request,HttpClientInterface $client): Response
     {

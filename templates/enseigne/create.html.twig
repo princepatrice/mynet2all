@@ -1,0 +1,99 @@
+{% extends 'layout/layout.html.twig' %}
+
+{% block title %}Enseigne{% endblock %}
+
+{% block body %}
+<header>
+<link rel="stylesheet" href="https://net2all-business.online/assets/intl/build/css/intlTelInput.min.css">
+</header>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                        <ol class="breadcrumb breadcrumb-col-pink">
+                                <li><a href="{{path('enseigne')}}"> 
+                                <span style="font-size:150%"><i class="material-icons">business</i> Enseignes  </span>  
+                                
+                                </a></li>
+                                 <li class="active1">  <span style="font-size:150%"> > </span></li>
+                                <li class="active1">  <span style="font-size:150%">  Création </span></li>
+                            </ol>
+            </div>
+            <div class="block-body row">
+              <div class="col-12">
+                    <div class="card">
+                        <div class="header">
+                            <h4>
+                               Créer une enseigne
+                            </h4>
+                         
+                        </div>
+                        <div class="body" style="min-height:400px">
+                        {% if app.request.get('error') %}
+                        <div class="alert alert-danger">
+                        Une erreur est parvenu lors de la création de l'enseigne. Cet enseigne existe déja
+                        </div>
+                        {% endif %}
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                  
+               
+                        <div class="body">
+                            <form id="form_validation"  action="{{path('enseigne-create-request')}}" method="POST"  enctype="multipart/form-data" >
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="nom_enseigne" placeholder="Nom de l'enseigne" required>
+                                        <label class="form-label"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="tel" aria-label="Phone" aria-describedby="basic-addon1" required>
+                                        <label class="form-label"></label>
+                                    </div>
+                                </div>
+                                 <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="file" class="form-control" name="file" >
+                                        <label class="form-label">Logo</label>
+                                    </div>
+                                </div>
+                                <div class="form-group " style="text-align:right">
+                                <button class="btn btn-primary waves-effect" type="submit">Créer l'enseigne</button>
+                                </div>
+                            </form>
+                        </div>
+                 
+              
+                    </div>
+                </div>
+            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{%block js%}
+<script src="https://net2all-business.online/assets/intl/build/js/intlTelInput-jquery.min.js"></script>
+<script>
+		jQuery(function($) {
+	//var input = document.querySelector("#phone");
+	phone=$("#phone").intlTelInput(/*input,(*/{
+		initialCountry:'bj',
+		preferredCountries:["bj","bf","ci","gw","ml","ne","sn","tg"],
+		separateDialCode: true,
+		autoPlaceholder:'aggressive',
+		utilsScript : "https://net2all-business.online/assets/intl/build/js/utils.js",
+	})/*)*/;
+		
+	$('form').submit(function(e){
+	 $('#phone').val($("#phone").intlTelInput('getNumber')); 	
+	});
+ });
+  </script>	
+
+{% endblock %}
