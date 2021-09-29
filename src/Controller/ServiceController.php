@@ -15,7 +15,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ServiceController extends AbstractController
 {
-    private $tab=["1"=>"https://panel.magmaerp.online/public"];
+    private $tab=[
+        "1"=>"https://panel.magmaerp.online/public",
+        "2"=>"https://panel.cashline.online/public"
+    ];
     /**
      * @Route("/", name="service")
      */
