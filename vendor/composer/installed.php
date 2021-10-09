@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '02d72f73088ca31b3f644d2c90e6d9f589a9a20d',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '02d72f73088ca31b3f644d2c90e6d9f589a9a20d',
     ),
     'bacon/bacon-qr-code' => 
     array (
@@ -262,6 +262,15 @@
       array (
       ),
       'reference' => 'bf180a382393e7db5c1e8d0f2ec0c4af9c724baf',
+    ),
+    'mercuryseries/flashy-bundle' => 
+    array (
+      'pretty_version' => 'v4.0.0',
+      'version' => '4.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'fa84b8b901d211381443b33f970976d4058d5491',
     ),
     'monolog/monolog' => 
     array (

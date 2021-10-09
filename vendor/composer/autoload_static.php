@@ -129,6 +129,7 @@ class ComposerStaticInit4ce4fa0894b97e4d88883aa33954a58b
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MercurySeries\\FlashyBundle\\' => 27,
         ),
         'L' => 
         array (
@@ -516,6 +517,10 @@ class ComposerStaticInit4ce4fa0894b97e4d88883aa33954a58b
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MercurySeries\\FlashyBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src',
         ),
         'Laminas\\ZendFrameworkBridge\\' => 
         array (
@@ -2091,6 +2096,12 @@ class ComposerStaticInit4ce4fa0894b97e4d88883aa33954a58b
         'Laminas\\ZendFrameworkBridge\\Replacements' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Replacements.php',
         'Laminas\\ZendFrameworkBridge\\RewriteRules' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/RewriteRules.php',
         'Locale' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Resources/stubs/Locale.php',
+        'MercurySeries\\FlashyBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/DependencyInjection/Configuration.php',
+        'MercurySeries\\FlashyBundle\\DependencyInjection\\MercurySeriesFlashyExtension' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/DependencyInjection/MercurySeriesFlashyExtension.php',
+        'MercurySeries\\FlashyBundle\\FlashyNotifier' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/FlashyNotifier.php',
+        'MercurySeries\\FlashyBundle\\MercurySeriesFlashyBundle' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/MercurySeriesFlashyBundle.php',
+        'MercurySeries\\FlashyBundle\\SessionStore' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/SessionStore.php',
+        'MercurySeries\\FlashyBundle\\SymfonySessionStore' => __DIR__ . '/..' . '/mercuryseries/flashy-bundle/src/SymfonySessionStore.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
         'Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
