@@ -15,6 +15,7 @@ class AuthController extends AbstractController
     //atributes
 
     private $apiLoginUrl="login.php";
+    private $apiCompteEcash="my_ecash_code.php";
 
     /**
      * @Route("/", name="login")
@@ -54,8 +55,31 @@ class AuthController extends AbstractController
     if ($result['status'] == 1) {
         $user =   $result;
         //dd($user);
-        $session = $request->getSession();
-        $session->set("currentuser",$user);
+
+        /**
+         * 
+         * COMPTE ECASH
+         * 
+         */
+
+        $response = $client->request('GET', $this->getParameter('API_URL')."mynet2all/".$this->apiCompteEcash, [
+            'query' => [
+                'id' => $user['id_utilisateur'],
+            ]
+        ]);
+
+
+    $content = $response->getContent(true);
+    $content_array = json_decode($content, true);
+    $code=$content_array["server_responses"]["code"]??null;
+    //dd($code);
+    $user["code_identification"]=$code;
+    
+    
+    $session = $request->getSession();
+    $session->set("currentuser",$user);
+
+    /************************************************ */
 
         return $this->redirectToRoute('dashboard');
     }

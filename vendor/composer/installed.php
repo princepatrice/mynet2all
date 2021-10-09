@@ -1,24 +1,33 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => '4ccf5ce92e20bd6cc87c5992a89e0f6b459b2047',
+    'reference' => NULL,
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4ccf5ce92e20bd6cc87c5992a89e0f6b459b2047',
+      'reference' => NULL,
+    ),
+    'bacon/bacon-qr-code' => 
+    array (
+      'pretty_version' => '2.0.4',
+      'version' => '2.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f73543ac4e1def05f1a70bcd1525c8a157a1ad09',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -28,6 +37,15 @@
       array (
       ),
       'reference' => 'b174585d1fe49ceed21928a945138948cb394600',
+    ),
+    'dasprid/enum' => 
+    array (
+      'pretty_version' => '1.0.3',
+      'version' => '1.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5abf82f213618696dda8e3bf6f64dd042d8542b2',
     ),
     'doctrine/annotations' => 
     array (
@@ -181,6 +199,33 @@
       array (
       ),
       'reference' => 'c81f18a3efb941d8c4d2e025f6183b5c6d697307',
+    ),
+    'endroid/installer' => 
+    array (
+      'pretty_version' => '1.3.3',
+      'version' => '1.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '04f900858442215b799af81866719922cce3d04a',
+    ),
+    'endroid/qr-code' => 
+    array (
+      'pretty_version' => '4.3.5',
+      'version' => '4.3.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5630e192948b466d418608ecce697465d20260af',
+    ),
+    'endroid/qr-code-bundle' => 
+    array (
+      'pretty_version' => '4.0.5',
+      'version' => '4.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '51ca7d7e921e967c67282c52d43c818287d0ea9f',
     ),
     'friendsofphp/proxy-manager-lts' => 
     array (
@@ -899,8 +944,8 @@
     ),
     'symfony/mailer' => 
     array (
-      'pretty_version' => 'v5.3.4',
-      'version' => '5.3.4.0',
+      'pretty_version' => 'v5.3.9',
+      'version' => '5.3.9.0',
       'aliases' => 
       array (
       ),
@@ -1309,6 +1354,15 @@
       array (
       ),
       'reference' => '4500fe63dc9c6ffc32d3b1cb0448c329f9c814b7',
+    ),
+    'symfonycasts/reset-password-bundle' => 
+    array (
+      'pretty_version' => 'v1.9.1',
+      'version' => '1.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '775e847613737f55cf06c6a7457f4bcf8ce258e5',
     ),
     'theseer/tokenizer' => 
     array (
